@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004119",
-  "source": "openneuro",
-  "source_id": "ds004119",
+  "pipeline_stage": "validated",
   "title": "BCIT Basic Guard Duty",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jonathan Touryan (data and curation)": {},
     "Brent Lance (data)": {},
@@ -13,26 +13,84 @@
     "Tony Johnson (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004119.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1016/j.biopsycho.2015.12.009",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116361",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116054",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004119",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004119",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was sponsored by the Army Research Laboratory and was accomplished under Cooperative Agreement Number W911NF-10-0-0002."
+      "funder_name": "Army Research Laboratory",
+      "award_number": "W911NF-10-0-0002"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".ipynb",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "The BCIT Basic Guard Duty dataset comprises EEG, eye-tracking, and behavioral data collected during a sustained vigilance task in which participants verified replica identification cards against reference images while performing a concurrent driving simulator task. The study measured cognitive and physiological responses to varying ID presentation rates (1-25 per minute) across ten 5-minute blocks, with participants making allow/deny decisions based on ID validity criteria. This dataset provides a rich resource for investigating EEG correlates of sustained attention, fatigue, and decision-making under varying cognitive workload in a realistic security screening context.",
+  "methods_description": "EEG was recorded using BioSemi 256-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Participants completed a guard duty task involving serial presentation of ID cards paired with reference face images from the Multi-PIE database. The task was divided into ten 5-minute blocks with ID presentation rates varying stochastically between 1 and 25 per minute. Participants made self-paced two-alternative forced-choice responses (allow/deny) with a 20-second maximum response time, and provided reasons for denied access from a predefined list.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "vigilance"
+    },
+    {
+      "term": "sustained attention"
+    },
+    {
+      "term": "fatigue"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "cognitive workload"
+    },
+    {
+      "term": "decision-making"
+    }
+  ],
+  "source_hash": "9538beae3be2d84a2bc9a2e441c09282a51fa7f2384d69ef6a468832d0ee9b1d"
 }
