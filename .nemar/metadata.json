@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Basic Guard Duty",
+  "description": "The BCIT Basic Guard Duty dataset comprises EEG, eye-tracking, and behavioral data collected during a sustained vigilance task in which participants verified replica identification cards against reference images. The study measured cognitive and physiological responses across varying task demands, with ID presentation rates ranging from 1 to 25 per minute. This dataset provides a rich resource for investigating EEG correlates of sustained attention, fatigue, and decision-making in realistic security screening scenarios.",
+  "methods_description": "EEG was recorded using BioSemi 256-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Participants completed a guard duty task involving serial presentation of ID cards paired with reference face images, with self-paced two-alternative forced-choice responses (maximum 20s per trial). The task was divided into ten 5-minute blocks with ID presentation rates varying within blocks according to predefined profiles (1, 2.5, 10, 15, 20, and 25 per minute). Behavioral measures included accuracy and response times; subjective measures included Task-Induced Fatigue Scale, Karolinska Sleepiness Scale, and Visual Analog Scale of Fatigue.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +15,30 @@
     "Tony Johnson (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004119.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "vigilance"
+    },
+    {
+      "term": "sustained attention"
+    },
+    {
+      "term": "fatigue"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "decision-making"
+    },
+    {
+      "term": "workload"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.biopsycho.2015.12.009",
       "identifier_type": "DOI",
@@ -43,6 +63,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004119",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004119.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -51,12 +76,12 @@
       "award_number": "W911NF-10-0-0002"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "59.2 GB (43 files)"
   ],
   "formats": [
     ".ipynb",
@@ -65,32 +90,8 @@
     ".set",
     ".tsv",
     ".txt",
-    ".xlsx"
+    ".xlsx",
+    ".yml"
   ],
-  "description": "The BCIT Basic Guard Duty dataset comprises EEG, eye-tracking, and behavioral data collected during a sustained vigilance task in which participants verified replica identification cards against reference images while performing a concurrent driving simulator task. The study measured cognitive and physiological responses to varying ID presentation rates (1-25 per minute) across ten 5-minute blocks, with participants making allow/deny decisions based on ID validity criteria. This dataset provides a rich resource for investigating EEG correlates of sustained attention, fatigue, and decision-making under varying cognitive workload in a realistic security screening context.",
-  "methods_description": "EEG was recorded using BioSemi 256-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Participants completed a guard duty task involving serial presentation of ID cards paired with reference face images from the Multi-PIE database. The task was divided into ten 5-minute blocks with ID presentation rates varying stochastically between 1 and 25 per minute. Participants made self-paced two-alternative forced-choice responses (allow/deny) with a 20-second maximum response time, and provided reasons for denied access from a predefined list.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "vigilance"
-    },
-    {
-      "term": "sustained attention"
-    },
-    {
-      "term": "fatigue"
-    },
-    {
-      "term": "eye tracking"
-    },
-    {
-      "term": "cognitive workload"
-    },
-    {
-      "term": "decision-making"
-    }
-  ],
-  "source_hash": "9538beae3be2d84a2bc9a2e441c09282a51fa7f2384d69ef6a468832d0ee9b1d"
+  "source_hash": "0fc57d8b7dee24a7d0a70ee621043e06491ea78be8b7f2d347febb4b1b154453"
 }
