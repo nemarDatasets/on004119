@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Basic Guard Duty",
-  "description": "The BCIT Basic Guard Duty dataset comprises EEG, eye-tracking, and behavioral data collected during a sustained vigilance task in which participants verified replica identification cards against reference images. The study measured cognitive and physiological responses across varying task demands, with ID presentation rates ranging from 1 to 25 per minute. This dataset provides a rich resource for investigating EEG correlates of sustained attention, fatigue, and decision-making in realistic security screening scenarios.",
-  "methods_description": "EEG was recorded using BioSemi 256-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Participants completed a guard duty task involving serial presentation of ID cards paired with reference face images, with self-paced two-alternative forced-choice responses (maximum 20s per trial). The task was divided into ten 5-minute blocks with ID presentation rates varying within blocks according to predefined profiles (1, 2.5, 10, 15, 20, and 25 per minute). Behavioral measures included accuracy and response times; subjective measures included Task-Induced Fatigue Scale, Karolinska Sleepiness Scale, and Visual Analog Scale of Fatigue.",
+  "description": "The BCIT Basic Guard Duty dataset comprises EEG, eye-tracking, and behavioral data collected during a sustained vigilance task in which participants verified replica identification cards against reference images. Subjects performed ten 5-minute blocks of the guard duty task with varying ID presentation rates (1-25 per minute) while seated in a driving simulator. This dataset provides multimodal neurophysiological and performance measures of cognitive fatigue and attention during a realistic security screening task.",
+  "methods_description": "EEG was recorded using BioSemi 256-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250 system. Participants completed a guard duty task involving serial presentation of ID cards paired with reference face images, with self-paced two-alternative forced-choice responses (maximum 20s per trial). Task difficulty was manipulated through stochastic queuing rates of ID presentations (1, 2.5, 10, 15, 20, 25 per minute) varying within each block. Behavioral measures included response accuracy, processing times, and subjective fatigue scales (TIFS, KSS, VAS-F).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,13 +26,10 @@
       "term": "sustained attention"
     },
     {
-      "term": "fatigue"
+      "term": "cognitive fatigue"
     },
     {
       "term": "eye tracking"
-    },
-    {
-      "term": "decision-making"
     },
     {
       "term": "workload"
