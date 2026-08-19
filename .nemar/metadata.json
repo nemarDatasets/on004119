@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Basic Guard Duty",
-  "description": "The BCIT Basic Guard Duty dataset comprises EEG, eye-tracking, and behavioral data collected during a sustained vigilance task in which participants verified replica identification cards against reference images. Subjects performed ten 5-minute blocks of the guard duty task with varying ID presentation rates (1-25 per minute) while seated in a driving simulator. This dataset provides multimodal neurophysiological and performance measures of cognitive fatigue and attention during a realistic security screening task.",
-  "methods_description": "EEG was recorded using BioSemi 256-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250 system. Participants completed a guard duty task involving serial presentation of ID cards paired with reference face images, with self-paced two-alternative forced-choice responses (maximum 20s per trial). Task difficulty was manipulated through stochastic queuing rates of ID presentations (1, 2.5, 10, 15, 20, 25 per minute) varying within each block. Behavioral measures included response accuracy, processing times, and subjective fatigue scales (TIFS, KSS, VAS-F).",
+  "description": "This dataset contains EEG, eye-tracking, and behavioral data from the Basic Guard Duty study, part of a larger project examining sustained vigilance in realistic task settings. Participants performed a two-alternative forced-choice ID verification task, judging the validity of replica identification cards presented at varying rates, while high-density EEG (256+8 channels) and eye-tracking data were recorded. The task was designed to probe attentional and vigilance dynamics under varying cognitive load, complementing companion driving tasks not included in this release.",
+  "methods_description": "EEG was recorded using a BioSemi 256(+8) channel system (plus 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using a Sensomotoric Instruments (SMI) REDEYE250 system. Participants completed a guard duty task involving serial presentation of replica ID cards paired with reference images, requiring allow/deny access decisions across ten 5-minute blocks with varying stochastic presentation rates (1–25 IDs/min). Additional questionnaire data (fatigue and sleepiness scales) were collected but are not included in this dataset.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,19 +20,21 @@
       "term": "EEG"
     },
     {
+      "term": "Eye Tracking"
+    },
+    {
       "term": "vigilance"
     },
     {
-      "term": "sustained attention"
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
     },
     {
-      "term": "cognitive fatigue"
+      "term": "cognitive load"
     },
     {
-      "term": "eye tracking"
-    },
-    {
-      "term": "workload"
+      "term": "identity verification task"
     }
   ],
   "related_identifiers": [
@@ -57,14 +59,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004119",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004119.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004119",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
