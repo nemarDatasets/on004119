@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Basic Guard Duty",
-  "description": "This dataset contains EEG, eye-tracking, and behavioral data from the Basic Guard Duty study, part of a larger project examining sustained vigilance in realistic task settings. Participants performed a two-alternative forced-choice ID verification task, judging the validity of replica identification cards presented at varying rates, while high-density EEG (256+8 channels) and eye-tracking data were recorded. The task was designed to probe attentional and vigilance dynamics under varying cognitive load, complementing companion driving tasks not included in this release.",
-  "methods_description": "EEG was recorded using a BioSemi 256(+8) channel system (plus 4 eye and 2 mastoid channels) at 1024 Hz sampling rate. Eye tracking was performed using a Sensomotoric Instruments (SMI) REDEYE250 system. Participants completed a guard duty task involving serial presentation of replica ID cards paired with reference images, requiring allow/deny access decisions across ten 5-minute blocks with varying stochastic presentation rates (1–25 IDs/min). Additional questionnaire data (fatigue and sleepiness scales) were collected but are not included in this dataset.",
+  "description": "EEG dataset from the Basic Guard Duty study of the Brain-Computer Interaction Technologies (BCIT) collection, designed to measure sustained vigilance in a realistic setting. Participants verified replica ID cards against reference face photographs at varying queuing rates while 256-channel BioSemi EEG and eye tracking were recorded. The dataset is formatted in BIDS with HED annotations and accompanies companion calibration and baseline driving datasets.",
+  "methods_description": "Participants completed ten 5-minute guard duty blocks, deciding whether to allow or deny access based on ID-photo pairings presented at stochastic queue rates of 1 to 25 per minute. EEG was recorded with BioSemi 256 (+8) channel systems at 1024 Hz, including 4 eye and 2 mastoid channels, alongside SMI REDEYE250 eye tracking. The task was performed in conjunction with driving simulator tasks whose data are not included here.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,28 +20,29 @@
       "term": "EEG"
     },
     {
-      "term": "Eye Tracking"
-    },
-    {
       "term": "vigilance"
     },
     {
-      "term": "Attention",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
+      "term": "sustained attention"
     },
     {
-      "term": "cognitive load"
+      "term": "eye tracking"
     },
     {
-      "term": "identity verification task"
+      "term": "fatigue"
+    },
+    {
+      "term": "decision making"
+    },
+    {
+      "term": "guard duty"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1016/j.biopsycho.2015.12.009",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.1016/j.neuroimage.2019.116361",
@@ -80,7 +81,7 @@
     "eeg"
   ],
   "sizes": [
-    "59.2 GB (43 files)"
+    "55.14 GB (43 files)"
   ],
   "formats": [
     ".ipynb",
